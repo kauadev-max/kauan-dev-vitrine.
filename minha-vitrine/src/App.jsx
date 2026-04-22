@@ -116,39 +116,45 @@ function App() {
         </div>
       </section>
 
-      {/* 5. PLANOS */}
+      {/* 5. PLANOS - AGORA COM MAIS DETALHES E CONFIANÇA */}
       <section className="pricing" id="planos">
-        <h3 className="section-title animar-cascata atraso-1">Investimento & Operação</h3>
+        <h3 className="section-title animar-cascata atraso-1">Planos & Investimento</h3>
         <div className="pricing-container">
           
+          {/* PLANO 1 */}
           <div className="pricing-card-dark animar-cascata atraso-2">
-            <h4>Página Inicial</h4>
+            <h4>Página Inicial (Landing Page)</h4>
             <div className="price">R$ 497<span>/único</span></div>
-            <p>Para prestadores de serviço.</p>
-            <ul>
-              <li>✔️ Layout mobile-first</li>
-              <li>✔️ Funil para WhatsApp</li>
-              <li>✔️ Setup de hospedagem</li>
+            <p className="pricing-desc">Ideal para prestadores de serviço e profissionais liberais que precisam de presença digital.</p>
+            <ul className="pricing-features">
+              <li>✔️ Layout adaptado para celular (Responsivo)</li>
+              <li>✔️ Botão direto para seu WhatsApp</li>
+              <li>✔️ Inclusão de fotos, serviços e depoimentos</li>
+              <li>✔️ Otimização de velocidade (Carregamento rápido)</li>
+              <li>✔️ Configuração do seu domínio (.com.br)</li>
             </ul>
             <button className="btn-nav-outline w-full mt-4" onClick={() => abrirWhatsAppPlano('Página Inicial', 'R$ 497')}>Quero esse plano</button>
           </div>
 
+          {/* PLANO 2 - O DESTAQUE */}
           <div className="pricing-card-dark destaque-neon animar-cascata atraso-3">
-            <div className="badge-pop">OPERAÇÃO DELIVERY</div>
-            <h4>Sistema Organizado</h4>
+            <div className="badge-pop">O MAIS VENDIDO</div>
+            <h4>Delivery Organizado</h4>
             <div className="price">R$ 897<span>/único</span></div>
-            <p>Para quem produz e não pode errar o pedido.</p>
-            <ul>
-              <li>✔️ Catálogo visual responsivo</li>
-              <li>✔️ Pedidos formatados no Zap</li>
-              <li>✔️ Painel de gestão de preços</li>
+            <p className="pricing-desc">A solução completa para quem vende comida e quer parar de errar pedidos no chat.</p>
+            <ul className="pricing-features">
+              <li>✔️ Site Completo + Catálogo de Produtos</li>
+              <li>✔️ Sistema de Pedidos Inteligente via WhatsApp</li>
+              <li>✔️ Painel Administrativo para trocar preços e fotos</li>
+              <li>✔️ Registro de domínio incluso por 1 ano</li>
+              <li>✔️ Suporte técnico e manual de uso</li>
             </ul>
-            <button className="btn-neon-roxo w-full mt-4" onClick={() => abrirWhatsAppPlano('Delivery Organizado', 'R$ 897')}>Montar minha operação</button>
+            <button className="btn-neon-roxo w-full mt-4" onClick={() => abrirWhatsAppPlano('Delivery Organizado', 'R$ 897')}>Montar meu Delivery</button>
           </div>
 
         </div>
       </section>
-
+      
       {/* 6. RODAPÉ */}
       <footer className="footer-dark">
         <div className="logo-vibes-small">vibes<span className="neon-text-roxo">.</span>KS</div>
